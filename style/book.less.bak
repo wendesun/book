@@ -1,0 +1,146 @@
+@import "./flex-swd";
+@import "./layer";
+@import "./loading";
+@import "./tip";
+
+@label-color:#fff;
+.wrapper *{ -webkit-box-sizing: border-box; box-sizing: border-box; }
+.hide{ display: none !important}
+.relative{ position: relative; }
+img{ vertical-align: middle }
+a.book-panel{
+  display: block;
+  &:active{
+    background-color: #f2f2f2;
+  }
+
+}
+.book-panel{position: relative; padding: .2rem;
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D5D5D6;
+    color: #D5D5D6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+  .book-photo{
+    width: 1.8rem;
+    margin-right: 0.3rem;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+  .book-content{
+    position: relative;
+    h3{
+      font-size: .32rem;
+      line-height: 1.425;
+    }
+    p{
+      font-size: 0.28rem;
+      line-height: 1.6;
+    }
+
+  }
+  .book-status{
+    float: right;
+  }
+  .label {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    padding: .3em .4em .25em;
+    font-size: .24rem;
+    line-height: normal;
+    color: @label-color;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+  }
+  .label-default {
+    background-color: #777;
+  }
+
+  .label-primary {
+    background-color: #337ab7;
+  }
+
+  .label-success {
+    background-color: #5cb85c;
+  }
+
+  .label-info {
+    background-color: #5bc0de;
+  }
+
+  .label-warning {
+    background-color: #f0ad4e;
+  }
+
+  .label-danger {
+    background-color: #d9534f;
+  }
+}
+.book-list,.book-history{
+  padding-bottom: 1.6rem;
+}
+.book-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D5D5D6;
+    color: #D5D5D6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+  .book-list-icon{ width:.5rem ; }
+  .book-history-icon{ width:.5rem ; height:.45rem ; }
+  a{
+    text-align: center;
+    padding: .22rem 0 .16rem 0;
+    font-size: .24rem;
+    border-radius: 200%;
+    color: #999;
+    &:active{
+      background-color: #f2f2f2;
+    }
+    img{ margin-bottom: .1rem}
+  }
+  .scan{
+    width: 1.5rem;
+    position: relative;
+    img{
+      position: absolute;
+      z-index: 1001;
+      left: 0;
+      bottom: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-top: 1px solid #ccc;
+      border-radius: 1rem;
+      background-color: #fff;
+    }
+  }
+}
+

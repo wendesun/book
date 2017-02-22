@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图书管理</title>
+	<script src="/libs/rem.H5.js"></script>
+	<script src="/libs/zepto.js"></script>
+	<script src="/libs/touch.js"></script>
+	<link type="text/css" rel="stylesheet" href="/libs/reset.H5.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="layer hide">
+		<div class="layer-bg"></div>
+		<div class="layer-main">
+			<img src=" ./images/QQ截图20170217153406.png " alt="">
+			<div class="layer-content">
+				<h3> 安徒生童话集 </h3>
+				<p> 童话故事 </p>
+				<p class="layer-description"> 价农认越例认效都省议那引群变。并力发别约方共天到主她前决结利。温传求看任历江三华格起思热角前二住。保合并何天口证较数音劳目。党军况量级者来上期决究最多化。导式看理复般并区称至切品形团速风。始重选元江确权院也地解教光。 </p>
+				<span class="layer-book-label"> 未借阅 </span>
+			</div>
+			<div class="layer-book-status">
+				<p>借阅人： 孙文德 </p>
+				<p>借阅时间： 2012-12-12 12:00 </p>
+			</div>
+		</div>
+	</div>
+	<div class="loading hide flex flex-pack-center flex-align-center">
+		<div class="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+	</div>
+	<div class="book-list">
+		<a href="javascript:void(0);" class="book-panel">
+			<div class="flex flex-pack-center">
+				<div class="book-photo">
+					<img src="./images/QQ截图20170217153406.png" alt="">
+				</div>
+				<div class="book-content flex-1">
+					<h3>图书名</h3>
+					<p>PHP</p>
+					<span class="label label-default">借阅中</span>
+				</div>
+			</div>
+		</a>
+		<div class="book-panel book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<h3>图书名</h3>
+				<p>PHP</p>
+				<span class="label label-default">借阅中</span>
+			</div>
+		</div>
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<h3>图书名</h3>
+				<p>PHP</p>
+				<span class="label label-primary">未借出</span>
+			</div>
+		</div>
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<h3>钢铁是怎样炼成的</h3>
+				<p>PHP</p>
+				<span class="label label-primary">未借出</span>
+			</div>
+		</div>
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<h3>安徒生童话</h3>
+				<p>PHP</p>
+				<span class="label label-primary">未借出</span>
+			</div>
+		</div>
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<h3>安徒生童话</h3>
+				<p>PHP</p>
+				<span class="label label-primary">未借出</span>
+			</div>
+		</div>
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<h3>安徒生童话</h3>
+				<p>PHP</p>
+				<span class="label label-primary">未借出</span>
+			</div>
+		</div>
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<h3>安徒生童话</h3>
+				<p>PHP</p>
+				<span class="label label-primary">未借出</span>
+			</div>
+		</div>
+	</div>
+	<div class="book-history hide">
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<div>
+					<span class="book-status">借阅中</span>
+					<h3>安徒生童话</h3>
+				</div>
+				<p>PHP</p>
+				<p>借阅时间：2017-1-10 12:00</p>
+				<p>归还时间：2017-2-10 12:00</p>
+			</div>
+		</div>
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<div>
+					<span class="book-status">借阅中</span>
+					<h3>安徒生童话</h3>
+				</div>
+				<p>PHP</p>
+				<p>借阅时间：2017-1-10 12:00</p>
+				<p>归还时间：2017-2-10 12:00</p>
+			</div>
+		</div>
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<div>
+					<span class="book-status">已归还</span>
+					<h3>安徒生童话</h3>
+				</div>
+				<p>PHP</p>
+				<p>借阅时间：2017-1-10 12:00</p>
+				<p>归还时间：2017-2-10 12:00</p>
+			</div>
+		</div>
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<div>
+					<span class="book-status">已归还</span>
+					<h3>安徒生童话</h3>
+				</div>
+				<p>PHP</p>
+				<p>借阅时间：2017-1-10 12:00</p>
+				<p>归还时间：2017-2-10 12:00</p>
+			</div>
+		</div>
+		<div class="book-panel flex flex-pack-center">
+			<div class="book-photo">
+				<img src="./images/QQ截图20170217153406.png" alt="">
+			</div>
+			<div class="book-content flex-1">
+				<div>
+					<span class="book-status">已归还</span>
+					<h3>安徒生童话</h3>
+				</div>
+				<p>PHP</p>
+				<p>借阅时间：2017-1-10 12:00</p>
+				<p>归还时间：2017-2-10 12:00</p>
+			</div>
+		</div>
+	</div>
+	<div class="book-footer flex">
+		<a id="bookList" class="flex-1" href="javascript:;">
+			<img src="./images/boox-15@3x.png" class="book-list-icon" alt="">
+			<p>图书列表</p>
+		</a>
+		<div  class="scan">
+			<img src="./images/QQ截图20170217153406.png" alt="">
+		</div>
+		<a id="myHistory" class="flex-1" href="javascript:;">
+			<img src="./images/boox-11@3x.png" class="book-history-icon" alt="">
+			<p>我的历史</p>
+		</a>
+	</div>
+</div>
+
+</body>
+</html>

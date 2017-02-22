@@ -1,0 +1,72 @@
+.layer{
+  .layer-bg{
+    position: fixed;
+    z-index: 1010;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+  }
+  .layer-main{
+    position: fixed;
+    z-index: 1011;
+    width: 80%;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -35%);
+    transform: translate(-50%, -35%);
+    background-color: #fff;
+    border-radius: .1rem;
+    overflow: hidden;
+    .layer-content{
+      padding:.2rem;
+      position: relative;
+      &:after {
+        content: " ";
+        position: absolute;
+        left: .2rem;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        border-top: 1px solid #D5D5D6;
+        color: #D5D5D6;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+      }
+      .layer-description{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .layer-book-label{
+        position: absolute;
+        background-color: #25adff;
+        display: none;
+        font-size: .24rem;
+        padding: .1rem;
+      }
+    }
+    .layer-book-status{
+      padding:.2rem;
+    }
+
+    img{
+      width: 100%;
+      display: block;
+    }
+    h3{
+      font-size: .32rem;
+      line-height: 1.425;
+    }
+    p{
+      font-size: 0.28rem;
+      line-height: 1.6;
+    }
+  }
+
+}
